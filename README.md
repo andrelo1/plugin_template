@@ -1,12 +1,11 @@
 # plugin_template
-## Dependencies
+## Code dependencies
 - [CommonLibSSE](https://github.com/Ryan-rsm-McKenzie/CommonLibSSE)
-## Building
-Prerequisites:
+## Dev dependencies
 - Visual Studio 2022
   - Desktop development with C++
 - [vcpkg](https://github.com/microsoft/vcpkg)
-
+## Build instructions
 Open x64 Native Tools Command Prompt for VS 2022.
 ```
 git clone https://github.com/andrelo1/plugin_template
