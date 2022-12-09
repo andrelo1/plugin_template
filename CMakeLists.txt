@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(MyPlugin VERSION 1.2.3.4)
+project(MyPlugin VERSION 1.0.0.0)
 
 find_package(CommonLibSSE REQUIRED)
 
