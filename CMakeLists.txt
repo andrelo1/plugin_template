@@ -1,8 +1,11 @@
 cmake_minimum_required(VERSION 3.20)
 
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules")
+
 project(MyPlugin VERSION 1.0.0.0)
 
 find_package(CommonLibSSE REQUIRED)
+find_package(Detours REQUIRED)
 
 configure_file(cmake/version.h.in version.h)
 configure_file(cmake/version.rc.in version.rc)
@@ -35,6 +38,7 @@ target_include_directories("${PROJECT_NAME}"
 target_link_libraries("${PROJECT_NAME}"
 	PRIVATE
 	CommonLibSSE::CommonLibSSE
+	Detours::Detours
 )
 
 install(TARGETS "${PROJECT_NAME}" RUNTIME DESTINATION "${SKYRIM_ROOT}/data/skse/plugins")
